@@ -1,0 +1,30 @@
+**Задача 1**. Два направления $\vec{n}$ и $\vec{n}'$ определяются в сферической системе координат углами $\theta$, $\alpha$ и $\theta'$, $\alpha'$. Найти косинус угла $\beta$ между ними.
+
+**Решение**. Вектора $\vec{n}$ и $\vec{n}'$ задаются в декартовой системе координат через сферические следующим образом:
+
+$$ 
+\begin{aligned}
+&
+\vec{n} = \{\sin \theta \cos \alpha, \sin \theta \sin \alpha, \cos \theta\}, \\
+&
+\vec{n}' = \{\sin \theta' \cos \alpha', \sin \theta' \sin \alpha', \cos \theta'\}.
+\end{aligned} 
+$$
+
+Поэтому: 
+
+$$
+\cos \beta = \vec{n}\cdot\vec{n}' =
+\sin \theta \sin \theta' (\cos \alpha \cos \alpha' + \sin \alpha \sin \alpha') + \cos \theta \cos \theta' =
+$$
+$$
+=
+\cos \theta \cos \theta' +
+\sin \theta \sin \theta' \cos (\alpha - \alpha')
+$$
+
+Одно интересное следствие этой задачи - если заданы два угла тетраэдра $\alpha$, $\beta$ при одной вершине и угол между гранями $\delta$, содержащими эти углы, то по представленной формуле можно найти третий угол при вершине $\gamma$:
+
+$$
+\cos \gamma = \cos \alpha \cos \beta + \sin \alpha \sin \beta \cos \delta.
+$$
