@@ -1,4 +1,7 @@
-# Поле произвольно движущейся заряженной частицы
+---
+layout: page
+title: Поле произвольно движущейся заряженной частицы
+---
 
 ## Потенциалы Лиенара-Вихерта
 
@@ -153,14 +156,16 @@ $$
 \nabla \frac{1}{R - \dfrac{\vec{R}\cdot\vec{v}}{c} } = -
 \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^2} \nabla \left(R - \dfrac{\vec{R}\cdot\vec{v}}{c} \right) =
 $$
-$$ =
-- \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} \left(\vec{n} - \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)\dfrac{\vec{v}}{c} - \frac{v^2}{c^2} \vec{n} + \frac{\vec{R}\cdot\vec{a}}{c^2} \vec{n}\right)
+
+$$ 
+= - \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} \left(\vec{n} - \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)\dfrac{\vec{v}}{c} - \frac{v^2}{c^2} \vec{n} + \frac{\vec{R}\cdot\vec{a}}{c^2} \vec{n}\right)
 $$
 
 $$
 \frac{\partial}{\partial t} \frac{1}{R - \dfrac{\vec{R}\cdot\vec{v}}{c} } = -
 \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^2} \frac{\partial}{\partial t} \left(R - \dfrac{\vec{R}\cdot\vec{v}}{c} \right) =
 $$
+
 $$
 = -
 \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} \left(- \vec{n}\cdot\vec{v} + \frac{v^2}{c} - \frac{\vec{R}\cdot\vec{a}}{c}\right) =
@@ -172,8 +177,9 @@ $$
 \vec{E} = \frac{q}{4\pi\varepsilon_0} \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} \left(
     - \frac{\vec{v}(\vec{n}\cdot\vec{v})}{c^2} +
     \vec{v}\frac{v^2}{c^3} -  \frac{\vec{R}\cdot\vec{a}}{c^3} \vec{v}
-    - \right.
+    \right. -
 $$
+
 $$
     - \left.    
      \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right) \frac{R}{c^2}\vec{a} +
@@ -183,9 +189,9 @@ $$
     \frac{\vec{R}\cdot\vec{a}}{c^2} \vec{n}
 \right) =
 $$
+
 $$
-= 
-    \frac{q}{4\pi\varepsilon_0} \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} \left(
+= \frac{q}{4\pi\varepsilon_0} \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} \left(
         \left(1 - \frac{v^2}{c^2} + \frac{\vec{R}\cdot\vec{a}}{c^2}\right) \left(\vec{n} - \frac{\vec{v}}{c}\right)
         - \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right) \frac{R}{c^2}\vec{a}
     \right)
@@ -194,6 +200,7 @@ $$
 $$
 \vec{B} = \mathrm{rot\,} \frac{\varphi \vec{v}}{c^2} = \nabla\varphi \times \frac{\vec{v}}{c^2} + \frac{\varphi}{c^2}  \nabla t' \times \vec{a} =
 $$
+
 $$
 = \frac{q}{4\pi\varepsilon_0 c^2}
 \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} 
@@ -207,6 +214,7 @@ $$
     \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right) \frac{R}{c} \vec{n} \times \vec{a}
 \right] =
 $$
+
 $$
 = -\frac{q}{4\pi\varepsilon_0 c^2}
 \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3} 
@@ -237,18 +245,22 @@ $$
 $$
 \mathrm{div\,} \vec{A} = \frac{\vec{v}\cdot\nabla\varphi + \varphi \vec{a} \cdot \nabla t'}{c^2} = 
 $$
+
 $$ = \frac{1}{c^2} \frac{q}{4\pi \varepsilon_0} 
 \left[ 
     - \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3}
     \left(\vec{n} - \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)\dfrac{\vec{v}}{c} - \frac{v^2}{c^2} \vec{n} + \frac{\vec{R}\cdot\vec{a}}{c^2} \vec{n}\right) \cdot \vec{v} - \frac{1}{c}\frac{\vec{n}\cdot\vec{a}}{R \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^2 }
 \right] =
 $$
+
 $$ = \frac{1}{c^2} \frac{q}{4\pi \varepsilon_0} \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3}
 \left[ 
     - \vec{n}\cdot \vec{v} + \dfrac{v^2}{c} - \dfrac{\vec{n}\cdot\vec{v}}{c} \dfrac{v^2}{c} + \frac{v^2}{c^2} \vec{n}\cdot \vec{v}  - \frac{\vec{R}\cdot\vec{a}}{c^2} \vec{n}\cdot\vec{v} - \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)\frac{\vec{R}\cdot\vec{a}}{c}
 \right] =
 $$
-$$ = \frac{1}{c^2} \frac{q}{4\pi \varepsilon_0} \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3}
+
+$$ 
+= \frac{1}{c^2} \frac{q}{4\pi \varepsilon_0} \frac{1}{R^2 \left(1 - \dfrac{\vec{n}\cdot\vec{v}}{c} \right)^3}
 \left[ 
     - \vec{n}\cdot \vec{v} + \dfrac{v^2}{c} - \frac{\vec{R}\cdot\vec{a}}{c}
 \right]

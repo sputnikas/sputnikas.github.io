@@ -1,4 +1,7 @@
-# Уравнения пьезоэффекта
+---
+layout: page
+title: Уравнения пьезоэффекта
+---
 
 ## [Уравнения пьезоэффекта в тензорной форме](.\piezoeffect_tensors_and_equations.md)
 ## [Вариационный принцип для пьезоэффекта](.\piezoeffect_variations.md)

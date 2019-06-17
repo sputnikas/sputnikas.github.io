@@ -1,4 +1,7 @@
-## Уравнения пьезоэффекта в векторной форме
+---
+layout: page
+title: Уравнения пьезоэффекта в векторной форме
+---
 
 К сожалению, но моделирование с учётом вариационного принципа не прокатило. FreeFem++ не может найти спектр, а решения при заданной частоте имеют слишком странный вид и больше похожи на шумы. Чтобы понять в чём здесь причина, получим уравнения в векторной форме. Найдём:
 
@@ -59,6 +62,7 @@ c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) +
 (c_{13} + c_{44}) \nabla_\perp \frac{\partial u_z}{\partial z} +
 c_{44} \frac{\partial^2 \vec{u}_\perp}{\partial z^2} +
 $$
+
 $$
 +
 c_{66} 
@@ -73,12 +77,14 @@ c_{66}
     \right)
 \right] =
 $$
+
 $$
 =
 c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) + 
 (c_{13} + c_{44}) \nabla_\perp \frac{\partial u_z}{\partial z} +
 c_{44} \frac{\partial^2 \vec{u}_\perp}{\partial z^2} +
 $$
+
 $$
 +
 c_{66} 
@@ -93,6 +99,7 @@ c_{66}
     \right)
 \right] =
 $$
+
 $$
 =
 c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) + 
@@ -167,6 +174,7 @@ e_{31} \left(
 +
 e_{33} \frac{\partial^2 u_z }{\partial z^2} =
 $$
+
 $$
 = 
 (e_{15} + e_{31}) \frac{\partial}{\partial z} (\nabla_\perp\cdot\vec{u}_\perp) +

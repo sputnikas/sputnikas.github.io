@@ -1,4 +1,7 @@
-## Вариационный принцип и цилиндрические координаты
+---
+layout: page
+title: Вариационный принцип для пьезоэффекта и цилиндрические координаты
+---
 
 В цилиндрических координатах:
 
@@ -132,6 +135,7 @@ $$
 $$
 e_{31} \frac{\partial \varphi}{\partial z} \left(\frac{\partial u_x}{\partial x} + \frac{\partial u_y}{\partial y}\right) + e_{33} \frac{\partial \varphi}{\partial z} \frac{\partial u_z}{\partial z} + e_{15} \left(\frac{\partial \varphi}{\partial x} \left[\frac{\partial u_z}{\partial x} + \frac{\partial u_x}{\partial z}\right] + \frac{\partial \varphi}{\partial y} \left[\frac{\partial u_z}{\partial y} + \frac{\partial u_y}{\partial z}\right]\right) =
 $$
+
 $$
 = e_{31} \nabla_\perp \cdot \vec{u}_\perp + e_{33} \frac{\partial \varphi}{\partial z} + e_{15} \nabla_\perp \varphi \cdot  \left(\nabla_\perp u_z + \frac{\partial \vec{u}_\perp}{\partial z}\right)
 $$
