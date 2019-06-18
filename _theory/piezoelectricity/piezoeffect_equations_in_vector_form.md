@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: theory_page
 title: Уравнения пьезоэффекта в векторной форме
+permalink: /piezoelectricity/piezoeffect_equations_in_vector_form/
+previous_page: /piezoelectricity/piezoeffect_variations_in_cylindrical_coordinates/
+next_page: /piezoelectricity/piezoeffect_first_example/
 ---
 
 К сожалению, но моделирование с учётом вариационного принципа не прокатило. FreeFem++ не может найти спектр, а решения при заданной частоте имеют слишком странный вид и больше похожи на шумы. Чтобы понять в чём здесь причина, получим уравнения в векторной форме. Найдём:
@@ -64,8 +67,7 @@ c_{44} \frac{\partial^2 \vec{u}_\perp}{\partial z^2} +
 $$
 
 $$
-+
-c_{66} 
++ c_{66} 
 \left[ 
     \vec{e}_x \frac{\partial}{\partial y} 
     \left(
@@ -79,15 +81,13 @@ c_{66}
 $$
 
 $$
-=
-c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) + 
+= c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) + 
 (c_{13} + c_{44}) \nabla_\perp \frac{\partial u_z}{\partial z} +
 c_{44} \frac{\partial^2 \vec{u}_\perp}{\partial z^2} +
 $$
 
 $$
-+
-c_{66} 
++ c_{66} 
 \left[ 
     \vec{e}_y\times\vec{e}_z \frac{\partial}{\partial y} 
     \left(
@@ -101,8 +101,7 @@ c_{66}
 $$
 
 $$
-=
-c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) + 
+= c_{11} \nabla_\perp (\nabla_\perp \cdot \vec{u}_\perp) + 
 (c_{13} + c_{44}) \nabla_\perp \frac{\partial u_z}{\partial z} +
 c_{44} \frac{\partial^2 \vec{u}_\perp}{\partial z^2} - c_{66} \nabla_\perp \times (\nabla_\perp \times \vec{u}_\perp)
 $$
@@ -176,8 +175,7 @@ e_{33} \frac{\partial^2 u_z }{\partial z^2} =
 $$
 
 $$
-= 
-(e_{15} + e_{31}) \frac{\partial}{\partial z} (\nabla_\perp\cdot\vec{u}_\perp) +
+= (e_{15} + e_{31}) \frac{\partial}{\partial z} (\nabla_\perp\cdot\vec{u}_\perp) +
 e_{31} \Delta_\perp u_z +
 e_{33} \frac{\partial^2 u_z }{\partial z^2}
 $$

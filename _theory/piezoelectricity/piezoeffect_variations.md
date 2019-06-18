@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: theory_page
 title: Вариационный принцип для пьезоэффекта
+permalink: /piezoelectricity/piezoeffect_variations/
+previous_page: /piezoelectricity/piezoeffect_tensors_and_equations/
+next_page: /piezoelectricity/piezoeffect_variations_in_cylindrical_coordinates/
 ---
 
 Умножим на $\delta u_i$ первое уравнение и просуммируем по $i$, умножим на $\delta \varphi$ второе уравнение, а затем проинтегриуем по $dVdt$:

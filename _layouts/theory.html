@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.theory.size > 0 -%}
+    <ul class="post-list">
+		{% for theory_page in site.theory %}
+			<h2>
+				<a href="{{ theory_page.url }}"> {{ theory_page.title }} </a>
+			</h2>
+		{% endfor %}
+    </ul>
+
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+  {%- endif -%}
+
+</div>

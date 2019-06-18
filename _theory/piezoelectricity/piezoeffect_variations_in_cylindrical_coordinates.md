@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: theory_page
 title: Вариационный принцип для пьезоэффекта и цилиндрические координаты
+permalink: /piezoelectricity/piezoeffect_variations_in_cylindrical_coordinates/
+previous_page: /piezoelectricity/piezoeffect_variations/
+next_page: /piezoelectricity/piezoeffect_equations_in_vector_form/
 ---
 
 В цилиндрических координатах:

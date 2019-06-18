@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: theory_page
 title: Уравнения пьезоэффекта в тензорной форме
+permalink: /piezoelectricity/piezoeffect_tensors_and_equations/
+previous_page: /piezo/
+next_page: /piezoelectricity/piezoeffect_variations/
 ---
 
 Начнём с общих уравнений:

@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: theory_page
 title: Пьезоэлектрическая бесконечная пластина на неподвижной подложке в воздушной среде
+permalink: /piezoelectricity/piezoeffect_first_example/
+previous_page: /piezoelectricity/piezoeffect_equations_in_vector_form/
+next_page: /piezo/
 ---
 
 Пусть пьезоэлектрическая пластина толщиной $l$ и неограниченная в плоскости $(x,y)$ лежит на неподвижной подложке и помещена в воздушную среду. Из-за наличия трансляционной симметрии $$\vec{u}_\perp = 0$$, $$\nabla_\perp = 0$$ . Соответствующие уравнения в пластине принимают вид:

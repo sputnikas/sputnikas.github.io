@@ -182,6 +182,7 @@ pre {
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
+  
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -191,6 +192,29 @@ pre {
   }
 }
 
+/**
+ * Toc
+ */
+.toc {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  
+  @extend %clearfix;
+}
+
+/**
+ * Navigation
+ */
+.navigation {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  
+  @extend %clearfix;
+}
 
 
 /**
