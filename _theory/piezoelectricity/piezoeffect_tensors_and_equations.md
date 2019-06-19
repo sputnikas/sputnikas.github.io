@@ -110,13 +110,17 @@ $$
 \mathrm{div\,} \vec{D} = 0
 $$
 
+$$
+D_k = e_{k,ij} u_{ij} - \varepsilon_{kj} \frac{\partial \varphi}{\partial x_j}
+$$
+
 В результате получаем систему уравнений:
 
 $$
 \rho \frac{\partial^2 u_i}{\partial t^2} = 
-\frac{c^E_{ijkl}}{2} \left(\frac{\partial^2 u_k}{\partial x_l \partial x_j} + \frac{\partial^2 u_l}{\partial x_k \partial x_j}\right) - e^t_{ij,k} \frac{\partial^2 \varphi}{\partial x_k \partial x_j}
+\frac{c^E_{ijkl}}{2} \left(\frac{\partial^2 u_k}{\partial x_l \partial x_j} + \frac{\partial^2 u_l}{\partial x_k \partial x_j}\right) + e^t_{ij,k} \frac{\partial^2 \varphi}{\partial x_k \partial x_j}
 $$
 
 $$
-\frac{\partial}{\partial x_j} \left( \varepsilon^{u}_{ij} \frac{\partial \varphi}{\partial x_i} \right)= - \frac{e_{k,ij}}{2} \left( \frac{\partial^2 u_i }{\partial x_j \partial x_k} + \frac{\partial^2 u_j }{\partial x_i \partial x_k} \right)
+\frac{\partial}{\partial x_j} \left( \varepsilon^{u}_{ji} \frac{\partial \varphi}{\partial x_i} \right)=  \frac{e_{k,ij}}{2} \left( \frac{\partial^2 u_i }{\partial x_j \partial x_k} + \frac{\partial^2 u_j }{\partial x_i \partial x_k} \right)
 $$

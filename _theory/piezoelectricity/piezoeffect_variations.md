@@ -10,17 +10,17 @@ next_page: /piezoelectricity/piezoeffect_variations_in_cylindrical_coordinates/
 
 $$
 \rho \delta u_i \frac{\partial^2 u_i}{\partial t^2} = 
-\frac{c^E_{ijkl}}{2} \delta u_i \left(\frac{\partial^2 u_k}{\partial x_l \partial x_j} + \frac{\partial^2 u_l}{\partial x_k \partial x_j}\right) - e^t_{ij,k} \delta u_i \frac{\partial^2 \varphi}{\partial x_k \partial x_j}
+\frac{c^E_{ijkl}}{2} \delta u_i \left(\frac{\partial^2 u_k}{\partial x_l \partial x_j} + \frac{\partial^2 u_l}{\partial x_k \partial x_j}\right) + e^t_{ij,k} \delta u_i \frac{\partial^2 \varphi}{\partial x_k \partial x_j}
 $$
 
 $$
-\delta \varphi \frac{\partial}{\partial x_j} \left( \varepsilon^{u}_{ij} \frac{\partial \varphi}{\partial x_i} \right)= - \delta \varphi \frac{e_{k,ij}}{2} \left( \frac{\partial^2 u_i }{\partial x_j \partial x_k} + \frac{\partial^2 u_j }{\partial x_i \partial x_k} \right)
+\delta \varphi \frac{\partial}{\partial x_j} \left( \varepsilon^{u}_{ij} \frac{\partial \varphi}{\partial x_i} \right)= \delta \varphi \frac{e_{k,ij}}{2} \left( \frac{\partial^2 u_i }{\partial x_j \partial x_k} + \frac{\partial^2 u_j }{\partial x_i \partial x_k} \right)
 $$
 
 После интегрирования по частям и пренебрегая всеми нелинейными слагаемыми ($\partial \rho/\partial t$ и т.д.):
 
 $$
-- \int\limits_{t_1}^{t_2} \int\limits_V \rho \frac{\partial \delta u_i}{\partial t} \frac{\partial u_i}{\partial t} dV dt =  - \int\limits_{t_1}^{t_2} \int\limits_{V} \frac{c^E_{ijkl}}{2} \frac{\partial \delta u_i}{\partial x_j} \left(\frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k}\right) dV dt + 
+- \int\limits_{t_1}^{t_2} \int\limits_V \rho \frac{\partial \delta u_i}{\partial t} \frac{\partial u_i}{\partial t} dV dt =  - \int\limits_{t_1}^{t_2} \int\limits_{V} \frac{c^E_{ijkl}}{2} \frac{\partial \delta u_i}{\partial x_j} \left(\frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k}\right) dV dt - 
 \int\limits_{t_1}^{t_2} \int\limits_{V} e^t_{ij,k} \frac{\partial \delta u_i}{\partial x_j} \frac{\partial \varphi}{\partial x_k} dV dt
 $$
 
@@ -30,13 +30,13 @@ $$
 \int\limits_{t_1}^{t_2} \int\limits_V 
 \left[
     \rho \frac{\partial \delta u_i}{\partial t} \frac{\partial u_i}{\partial t} - 
-    c^E_{ijkl} \frac{\partial \delta u_i}{\partial x_j} \frac{\partial u_k}{\partial x_l}  + 
+    c^E_{ijkl} \frac{\partial \delta u_i}{\partial x_j} \frac{\partial u_k}{\partial x_l}  - 
     e^t_{ij,k} \frac{\partial \delta u_i}{\partial x_j} \frac{\partial \varphi}{\partial x_k}
 \right] dV dt = 0
 $$
 
 $$
-\int\limits_{t_1}^{t_2} \int\limits_V  \varepsilon^{u}_{ij} \frac{\partial \delta \varphi}{\partial x_j} \frac{\partial \varphi}{\partial x_i} dV dt + \int\limits_{t_1}^{t_2} \int\limits_V e_{k,ij} \frac{\partial \delta \varphi}{\partial x_k } \frac{\partial u_i }{\partial x_j} dV dt = 0
+\int\limits_{t_1}^{t_2} \int\limits_V  \varepsilon^{u}_{ij} \frac{\partial \delta \varphi}{\partial x_j} \frac{\partial \varphi}{\partial x_i} dV dt - \int\limits_{t_1}^{t_2} \int\limits_V e_{k,ij} \frac{\partial \delta \varphi}{\partial x_k } \frac{\partial u_i }{\partial x_j} dV dt = 0
 $$
 
 Отсюда следует общий вариационный принцип для пьезоэлектриков:
@@ -46,7 +46,7 @@ $$
 \int\limits_{t_1}^{t_2} \int\limits_V 
 \left[
     \frac{\rho}{2} \left(\frac{\partial u_i}{\partial t} \right)^2 - 
-    \frac{c^E_{ijkl}}{2} \frac{\partial u_i}{\partial x_j} \frac{\partial u_k}{\partial x_l}  + 
+    \frac{c^E_{ijkl}}{2} \frac{\partial u_i}{\partial x_j} \frac{\partial u_k}{\partial x_l}  - 
     e^t_{ij,k} \frac{\partial u_i}{\partial x_j} \frac{\partial \varphi}{\partial x_k} +
     \frac{\varepsilon^{u}_{ij}}{2} \frac{\partial \varphi}{\partial x_j} \frac{\partial \varphi}{\partial x_i}
 \right] dV dt = 0
