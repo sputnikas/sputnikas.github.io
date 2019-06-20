@@ -9,3 +9,4 @@ permalink: /batygin_1970/
 
 ## Векторное и тензорное исчисление:
 [1]( {{'/batygin_1970/1/' | relative_url}} )
+[2]( {{'/batygin_1970/2/' | relative_url}} )
