@@ -133,26 +133,30 @@ $$
 $$
 (e_{15} + e_{31}) \frac{\partial^2 \varphi}{\partial x \partial z}
 $$
+
 $$
 (e_{15} + e_{31}) \frac{\partial^2 \varphi}{\partial y \partial z}
 $$
+
 $$
 e_{15} \left(
     \frac{\partial^2 \varphi}{\partial x^2} + 
     \frac{\partial^2 \varphi}{\partial y^2}
 \right)
 +
-
 e_{33} \frac{\partial^2 \varphi}{\partial z^2} = 
 e_{15} \Delta_\perp \varphi + 
 e_{33} \frac{\partial^2 \varphi}{\partial z^2}
 $$
 
 Умножаем первое и второе на соответствующие орты и снова складываем:
+
 $$
 (e_{15} + e_{31}) \nabla_\perp \frac{\partial\varphi}{\partial z}
 $$
+
 Также найдём:
+
 $$
 e_{k,ij} \frac{\partial^2 u_i }{\partial x_j \partial x_k} 
 = 
@@ -170,12 +174,15 @@ e_{31} \left(
 +
 e_{33} \frac{\partial^2 u_z }{\partial z^2} =
 $$
+
 $$
 = (e_{15} + e_{31}) \frac{\partial}{\partial z} (\nabla_\perp\cdot\vec{u}_\perp) +
 e_{31} \Delta_\perp u_z +
 e_{33} \frac{\partial^2 u_z }{\partial z^2}
 $$
+
 Собираем теперь всё вместе, чтобы получить уравнение в векторной форме для $x, y$ компонент:
+
 $$
 \begin{aligned}
 &
@@ -198,7 +205,9 @@ e_{15} \Delta_\perp \varphi +
 e_{33} \frac{\partial^2 \varphi}{\partial z^2}
 \end{aligned}
 $$
+
 Недостающее уравнение для потенциалов аналогично принимает вид:
+
 $$
 \varepsilon_{11} \Delta_\perp \varphi +
 \varepsilon_{33} \frac{\partial^2 \varphi}{\partial z^2}
@@ -207,3 +216,4 @@ $$
 e_{31} \Delta_\perp u_z +
 e_{33} \frac{\partial^2 u_z }{\partial z^2}
 $$
+
