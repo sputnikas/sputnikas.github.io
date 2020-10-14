@@ -6,7 +6,7 @@ previous_page: /piezoelectricity/piezoeffect_tensors_and_equations/
 next_page: /piezoelectricity/piezoeffect_variations_in_cylindrical_coordinates/
 ---
 
-Умножим на $\delta u_i$ первое уравнение и просуммируем по $i$, умножим на $\delta \varphi$ второе уравнение, а затем проинтегриуем по $dVdt$:
+Умножим на $\delta u_i$ первое уравнение и просуммируем по $i$, умножим на $\delta \varphi$ второе уравнение, а затем проинтегрируем по $dVdt$:
 
 $$
 \rho \delta u_i \frac{\partial^2 u_i}{\partial t^2} = 
@@ -17,7 +17,7 @@ $$
 \delta \varphi \frac{\partial}{\partial x_j} \left( \varepsilon^{u}_{ij} \frac{\partial \varphi}{\partial x_i} \right)= \delta \varphi \frac{e_{k,ij}}{2} \left( \frac{\partial^2 u_i }{\partial x_j \partial x_k} + \frac{\partial^2 u_j }{\partial x_i \partial x_k} \right)
 $$
 
-После интегрирования по частям и пренебрегая всеми нелинейными слагаемыми ($\partial \rho/\partial t$ и т.д.):
+После интегрирования по частям и пренебрегая всеми нелинейными слагаемыми ($\partial \rho/\partial t$ и т. д.):
 
 $$
 - \int\limits_{t_1}^{t_2} \int\limits_V \rho \frac{\partial \delta u_i}{\partial t} \frac{\partial u_i}{\partial t} dV dt =  - \int\limits_{t_1}^{t_2} \int\limits_{V} \frac{c^E_{ijkl}}{2} \frac{\partial \delta u_i}{\partial x_j} \left(\frac{\partial u_k}{\partial x_l} + \frac{\partial u_l}{\partial x_k}\right) dV dt - 
@@ -149,13 +149,16 @@ $$
 (*) = c_{11} [(1) + (2) - (2)] + c_{12} (2) + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} (6) =  
 $$
 
-$$ = c_{11} [(1) + (2)] + [ c_{12} - c_{11} ](2) + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} (6) = 
+$$
+= c_{11} [(1) + (2)] + [ c_{12} - c_{11} ](2) + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} (6) = 
 $$
 
-$$ = c_{11} [(1) + (2)] + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} [(6) - 2(2)] = 
+$$
+= c_{11} [(1) + (2)] + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} [(6) - 2(2)] = 
 $$
 
-$$ = c_{11} [(1) + (2)] + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} [(6) - \{(1) + (2)\} + \{(1) - (2)\}]
+$$
+= c_{11} [(1) + (2)] + c_{13} (3) + c_{33} (4) + c_{44} (5) + c_{66} [(6) - \{(1) + (2)\} + \{(1) - (2)\}]
 $$
 
 Учитывая:
