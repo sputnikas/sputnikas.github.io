@@ -73,7 +73,7 @@ $$
 \frac{\partial G_{ij}}{\partial q^k} = \Gamma^l_{i, k} G_{lj} + \Gamma^l_{j,k} G_{il}
 $$
 
-Мы имеем $N^2 M$ линейных уравнений относительно $N^2 M$ линейных неизвестных. Система может быть разрешима, хотя условия разрешимости, как и сами решения требуют отдельного анализа. Её можно переписать в матричном виде. Обозначим $\hat{\Gamma}_k$ матрицу с элементами $\{\hat{\Gamma}_k\}_{ij} = \Gamma^j_{i, k}$. Тогда:
+Мы имеем $N^2 M$ линейных уравнений относительно $N^2 M$ линейных неизвестных. Система может быть разрешима, хотя условия разрешимости, как и сами решения требуют отдельного анализа. Её можно переписать в матричном виде. Обозначим $\hat{\Gamma}_k$ матрицу с элементами $ \{\hat{\Gamma}_k\}_{ij} = \Gamma^j_{i, k} $. Тогда:
 
 $$
 \frac{\partial \hat{G}}{\partial q^k} = \hat{\Gamma}_k \hat{G} + \hat{G}\hat{\Gamma}^T_k
@@ -188,10 +188,13 @@ $$
    $$
 
 3. Производная детерминанта "метрического" тензора:
+
    $$
    \frac{\partial \det \hat{G}}{\partial q^j} = \frac{2\det{\hat{G}}}{N} \Gamma^i_{i,j}
    $$
+   
    *Доказательство:*
+   
    $$
    \frac{\partial \det \hat{G}}{\partial q^j} = \begin{vmatrix}
    \dfrac{\partial G_{11}}{\partial q^j} & \dfrac{\partial G_{12}}{\partial q^j} & \ldots  & \dfrac{\partial G_{1N}}{\partial q^j} \\
@@ -205,7 +208,9 @@ $$
    G_{N1} & G_{N2} & \ldots & G_{NN} 
    \end{vmatrix} + \ldots = \frac{1}{N} a^{ik} \frac{\partial G_{ik}}{\partial q^j}
    $$
+   
    $a^{ik}$ - алгебраическое дополнение к $G_{ik}$. По теореме о структуре обратных матриц:
+   
    $$
    a^{ik} = G^{ki} \det{\hat{G}}
    $$
@@ -215,6 +220,7 @@ $$
    $$
 
    В частности отсюда следует, что:
+   
    $$
    \Gamma^i_{i, j} = \frac{N}{2} \frac{\partial \ln \det \hat{G}}{\partial q^j}
    $$
