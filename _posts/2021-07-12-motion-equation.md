@@ -44,7 +44,12 @@ $$
 Начальные: 
 
 $$
-r(t_0) = r_0, \quad \theta(t_0) = \theta_0, \quad \dot{r} (t_0) = \dot{r}_0, \quad  \dot{\theta}(t_0) = \dot{\theta}_0
+\begin{aligned}
+& r(t_0) = r_0, \\
+& \theta(t_0) = \theta_0, \\
+& \dot{r} (t_0) = \dot{r}_0, \\
+& \dot{\theta}(t_0) = \dot{\theta}_0.
+\end{aligned}
 $$​
 
 В результате:
