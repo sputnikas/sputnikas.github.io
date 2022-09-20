@@ -43,7 +43,9 @@ $$
 
 Начальные: 
 
-$$r(t_0) = r_0 \quad \theta(t_0) = \theta_0 \quad \dot{r} (t_0) = \dot{r}_0 \quad  \dot{\theta}(t_0) = \dot{\theta}_0$$​
+$$
+r(t_0) = r_0, \quad \theta(t_0) = \theta_0, \quad \dot{r} (t_0) = \dot{r}_0, \quad  \dot{\theta}(t_0) = \dot{\theta}_0
+$$​
 
 В результате:
 
