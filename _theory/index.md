@@ -15,3 +15,4 @@ layout: default
 
 # Математические соотношения и их доказательства
 ## [Сферические координаты в N-мерном случае]({{'/math/spherical_coordinates/' | relative_url}})
+## [Ряды Фурье в трёхмерном пространстве]({{'/math/3d-fourier-tranforms/' | relative_url}})
