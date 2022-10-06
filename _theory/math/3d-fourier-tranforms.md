@@ -93,3 +93,17 @@ $$
 & U_\vec{K} = \frac{1}{V} \int\limits_V u(\vec{r}) \exp(-i \vec{K}\cdot\vec{r})) dV
 \end{aligned}
 $$
+
+Получим ещё одно соотношение:
+
+$$
+u(\vec{r}) = \sum\limits_{\vec{K}} \frac{1}{V} \int\limits_V u(\vec{r}') \exp(-i \vec{K}\cdot\vec{r}')) dV' \exp (i\vec{K}\cdot\vec{r}) = 
+$$
+
+$$
+= \int\limits_V u(\vec{r}') \left[\frac{1}{V} \sum\limits_{\vec{K}} \exp (i\vec{K}\cdot (\vec{r} - \vec{r}'))\right] dV'
+$$
+
+$$
+\sum\limits_{n,m,k} \delta(\vec{r} - \vec{r}' - n \vec{a} - m \vec{b} - k \vec{c}) = \left[\frac{1}{V} \sum\limits_{\vec{K}} \exp (i\vec{K}\cdot (\vec{r} - \vec{r}'))\right]
+$$
